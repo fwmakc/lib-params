@@ -28,7 +28,7 @@ export class StackParam<T> extends ParamTemplate<StackInterface<T>> {
 
   // возвращает первый элемент со дна стека и далее вверх с увеличением индекса
   at(index = 0): T | null {
-    return this.params.currentList.at(index) || null;
+    return this.params.currentList[index] || null;
   }
 
   length(): number {
